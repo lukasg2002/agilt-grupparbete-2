@@ -57,5 +57,18 @@
         <p>Golfklubb Center</p>
         <p>Adress: Golfgatan 1, 123 45 Golfstaden</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
