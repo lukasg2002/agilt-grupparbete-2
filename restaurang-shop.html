@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="golfball.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="restaurang-shop.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Golfklubb</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Välkommen till Golfklubb Center</h1>
+    </header>
+
+    <nav>
+        <div class="menu" onclick="toggleMenu()">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
+
+        <div class="dropdown-content" id="menu">
+            <ul>
+                <li><a href="golfklubb.html">Start</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="boka.html">Boka tid</a></li>
+                <li><a href="medlem.html">Medlem</a></li>
+                <li><a href="restaurang-shop.html">Restaurang & Shop</a></li>
+                <li><a href="tavlingar.html">Tävlingar</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h2>Restaurang & Shop</h2>
+    </section>
+    <div class="container">
+        <section id="about">
+            <h3>Restaurang Öppettider: </h3>
+            <p>Måndag - Fredag: 10:00 - 20:00</p>
+            <p>Lördag - Söndag: 11:00 - 18:00</p>
+            <img src="restaurang.jpg" alt="Restaurang">
+        </section>
+        <section id="about2">
+            <h3>Shop Öppettider: </h3>
+            <p>Måndag - Fredag: 10:00 - 16:00</p>
+            <p>Lördag - Söndag: 11:00 - 14:00</p>
+            <img src="golf2.jpg" alt="Shop">
+        </section>
+    </div>
+    <footer>
+        <p>Golfklubb Center</p>
+        <p>Adress: Golfgatan 1, 123 45 Golfstaden</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
